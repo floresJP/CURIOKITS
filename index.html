@@ -18,15 +18,15 @@ content="Curiokits crea fiestas infantiles inolvidables con animación, decoraci
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://curiokits.com">
 <meta property="og:image" content="https://curiokits.com/imagenes/logo1.jpg">
-<!-- TWITTER CARD -->
+            <!-- ====TWITTER CARD==== -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Curiokits Producciones">
 <meta name="twitter:description" content="Organización de eventos infantiles">
 <meta name="twitter:image" content="https://curiokits.com/imagenes/logo1.jpg">
-<!-- CANÓNICA Y FAVICON -->
-<link rel="canonical" href="https://curiokits.com"
-<link rel="icon" type="image/x-icon" href="imagenes/logo_1.jpg">
-<!-- GOOGLE FONTS -->
+            <!-- ==== CANÓNICA Y FAVICON==== -->
+<link rel="canonical" href="https://curiokits.com"/>
+<link rel="icon" type="image/x-icon" href="imagenes/logo_1.jpg"/>
+            <!-- ====GOOGLE FONTS==== -->
  <link rel="preconnect" href="https://.googleapis.com" />
  <link rel="preconnect" href="https://.googleapis.com" crossorigin=""/>
  <link 
@@ -36,8 +36,145 @@ content="Curiokits crea fiestas infantiles inolvidables con animación, decoraci
  <link rel="stylesheet" href="estilos.css">
 </head>
 
-
 <body>
-    
-</body>
+        <!-- ====ESTRUCTURA PRINCIPAL CON CSS-GRID=== -->>
+    <div class="portafolio">
+   <!-- +************************************
+            HEADER CON NAVEGACIÓN REPONSIVE  
+         *************************************-->
+        <header class="header">
+            <div class="header_container">
+                <!--== LOGO A LA IZQUIERDA== -->
+                <div class="header_logo">
+                    <a href="inicio">
+                        <img src="imagenes/logo_1.jpg" alt="logo curiokits" />
+                    </a>
+                    <h1>EVENTOS INFANTILES</h1>
+            </div>
+
+                    <!-- ==MENÚ MOVIL==-->
+                    <input type="checkbox" id="menu-toggle" class="header__menú-toggle" /> 
+                 <label for="menu-toggle" class="header__menú-buton">
+                     <span class="hamburger 1"></span>
+                     <span class="hamburger 2"></span>
+                     <span class="hamburger 3"></span>
+                 </label>
+
+                        <!-- ==NAVEGACIÓN A LA DERECHA== -->
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#inicio" class="nav__link nav__link--active">Inic/a>
+                        </li>
+                        <li class="nav__item">
+                             <a href="#paqueteclass="nav__link">Paquetes
+                        </a>
+                        </li> 
+                        <li class="nav__item">
+                             <a href="#servicios" class="nav__link">Servicios</a>
+                        </li>
+                        <li class="nav__item">
+                             <a href="#Otros" class="main-nav__link">Otros Servicios</a>
+                        </li>
+                        <li class="nav__item">
+                             <a href="#Galeria" class="nav__link">Galeria</a>
+                        </li>
+                        <li class="nav_-item">
+                             <a href="#contacto" class="nav__link nav__link--button">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+
+        </header>   
+        <!-- +******************************
+                    CONTENIDO PRINCIPAL
+              ****************************** -->
+        <main class="main">
+            <!-- SECCIÓN HERO-->
+             <section id="inicio" class="hero">
+                <div class="hero__container">
+                    <h2>Paquetes <br>Shows infantiles</h2>
+                            <p> Ofrecemos diversos paquetes ideales para todo tipo de fiestas infantiles, desde celebraciones en casa hasta grandes eventos temáticos.</p>
+                        <button>Shows infantiles</button>
+                    <h2>Servicios infantiles
+                        Variados</h2>
+                            <p>Ofrecemos decoración temática, tortas personalizadas, animación para eventos familiares y empresariales, piñatería. </p>
+                        <button>Servicios para fiestas infantiles</button>
+                    <h2>Alquiler de disfraces</h2>
+                            <p>Alquiler de disfraces, muñecos y trajes</p>
+                        <button>Alquiler de disfraces</button>
+                    <h2>Decoraciones</h2>
+                    <p>Creamos decoraciones temáticas personalizadas que transforman cualquier espacio en un mundo mágico.</p>
+                    <button>Decoraciones temáticos</button>
+                </div>
+                <div class="slider-wrapper">
+                     <div class="slider">
+                         <img src="imagenes/plimplim2.jpg" alt="Foto 1" />
+                         <img src="imagenes/babyshower2.jpg" alt="Foto 2" />
+                         <img src="imagenes/navidad2.jpg" alt="Foto 3" />
+                    </div>
+                         <div class="dots">
+                            <span></span><span></span><span></span>
+                         </div>
+                </div>
+             </section>
+                    <!-- ====SECCIÓN SOBRE CURIOKITS==== -->
+             <section id="sobre-curiokits"class="about">
+                 <div class="about__container">
+                       <!-- SECCIÓN SUPERIOR:Descripción mas fotos-->
+                        <div class=" about__header">
+                           <div class="about___content">
+                                <h2 class="about__title">Show infantil en Lima</h2>
+                                <p class="about__text">Les damos la bienvenida a nuestro Sitio Web. Somos Curiokits Producciones, los magos de las fiestas infantiles en Lima. Llegamos con juegos, risas y personajes increíbles que harán que tus peques vivan aventuras llenas de diversión y aprendizaje. Desde hadas encantadas hasta superhéroes valientes, nuestro equipo está listo para transformar tu evento en un mundo mágico y súper interactivo. ¡Con nosotras, la diversión está asegurada!</p>
+                            </div>
+                            <!-- FOTO SHOW MARIO BROS-->
+                              <div class="about__image">
+                                <img src="imagenes/showmariobros.jpg" alt="show mario-bros" />
+                                </div>
+                         </div>
+
+                         <!--SECCIÓN--CUADROS-INDICANDO LO QUE CONTIENE-->
+                        
+                                <h2>Organización de fiestas infantiles</h2>
+
+                                <div class="container">
+
+                                    <div class="card">
+                                     <h3 class="yellow">Shows infantiles temáticos</h3>
+                                    <p>Con todos los personajes de moda, para eventos familiares y empresariales.</p>
+                                    <a href="#dettales" class="button">Ver más detalles ➔</a>
+                                 </div>
+
+                                    <div class="card">
+                                        <h3 class="purple">Decoraciones </h3>
+                                         <p>Decoraciones para fiestas infantiles: sencillas, completas, cumpleaños, y más.</p>
+                                         <a href="#detalles" class="button">Ver más detalles ➔</a>
+                                    </div>
+
+                                 <div class="card">
+                                        <h3 class="orange">Alquiler de disfraces </h3>
+                                        <p>Disfraces, muñecos, trajes para niños y adultos.</p>
+                                        <a href="#detalles" class="button">Ver más detalles ➔</a>
+                                 </div>
+
+                                  <div class="card">
+                                         <h3 class="blue">Show Navideño </h3>
+                                         <p>Servicio de shows navideños,papa Noel,entre otros.</p>
+                                        <a href="#detalles" class="button">Ver más detalles ➔</a>
+                                    </div>
+                                    <div class="card">
+                                            <h3 class="red">Piñateria</h3>
+                                            <p>Piñatas originales y llenas de color, adaptadas a la temática de tu fiesta.</p>
+                                            <a href="#detalles" class="button">Ver más detalles ➔</a>
+                                    </div>
+                                       <div class="card">
+                                            <h3 class="red">Escríbenos o llámanos</h3>
+                                            <p>Cuiokitsproducciones@eventosinfantiles.com <br>Entel: 956 661 189. <br> 991 290 503</p>
+                                            <a href="#detalles" class="button">Ver más detalles ➔</a>
+                                    </div>
+                                </div>
+                 </div>  
+             </section>      
+        </main>
+     </div>            
 </html>
