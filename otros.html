@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- ====ESTRUCTURA PRINCIPAL CON CSS-GRID PARA MOVIL=== -->
+    <div class="portafolio">
+   <!-- +************************************
+            HEADER CON NAVEGACIÓN REPONSIVE  
+         *************************************-->
+        <header class="header">
+            <div class="header_container">
+                <!--== LOGO A LA IZQUIERDA== -->
+                <div class="header__logo">
+                    <a href="#inicio">
+                        <img src="imagenes/logo.png" alt="logo curiokits" />
+                    </a>
+                    <h3>EVENTOS INFANTILES</h3>
+                </div>
+                    <!-- ==MENÚ MOVIL==--> 
+                    <input type="checkbox" id="menu-toggle" class="header__menu-toggle" /> 
+                    <label for="menu-toggle" class="header__menu-buton">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                        <!-- ==NAVEGACIÓN A LA DERECHA== -->
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
+                        </li>
+                        <li class="nav__item">
+                        <a href="paquetes.html" class="nav__link ">Paquetes</a>
+                        </li> 
+                        <li class="nav__item">
+                             <a href="servicios.html" class="nav__link ">Servicios</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="otros.html" class="nav__link ">Otros</a>
+                        </li>
+                        <li class="nav__item">
+                             <a href="galeria.html" class="nav__link ">Galeria</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contacto.html" class="nav__link ">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>   
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/giovanni-emilio-ramirez-28b5161b8/" class="social-link"
+                        aria-label="LinkedIn" target="_blank">💼</a>
+                    <a href="https://github.com/GERB-DEVELOPER" class="social-link" aria-label="GitHub"
+                        target="_blank">💻</a>
+                    <a href="https://www.facebook.com/giovanni.ramirezberrocal" class="social-link" aria-label="Twitter"
+                        target="_blank">🐦</a>
+                    <a href="https://www.instagram.com/ramirezberrocalgiovanni/" class="social-link"
+                        aria-label="Instagram" target="_blank">📷</a>
+                </div>
+                <p class="footer__text">
+                    © 2025 curiokits Producciones. Todos los derechos reservados.
+                    Desarrollado por Janeth y Betsy con mucho love❤️
+                </p>
+            </div>
+        </footer>
+</body>
+</html>
