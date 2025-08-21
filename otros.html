@@ -1,74 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos/otros.css">
 </head>
+
 <body>
-     <!-- ====ESTRUCTURA PRINCIPAL CON CSS-GRID PARA MOVIL=== -->
-    <div class="portafolio">
-   <!-- +************************************
+
+    <body>
+        <!-- ====ESTRUCTURA PRINCIPAL CON CSS-GRID PARA MOVILO=== -->
+        <div class="portafolio">
+            <!-- +************************************
             HEADER CON NAVEGACIÓN REPONSIVE  
          *************************************-->
-        <header class="header">
-            <div class="header_container">
-                <!--== LOGO A LA IZQUIERDA== -->
-                <div class="header__logo">
-                    <a href="#inicio">
-                        <img src="imagenes/logo.png" alt="logo curiokits" />
-                    </a>
-                    <h3>EVENTOS INFANTILES</h3>
-                </div>
-                    <!-- ==MENÚ MOVIL==--> 
-                    <input type="checkbox" id="menu-toggle" class="header__menu-toggle" /> 
+            <header class="header">
+                <div class="header_container">
+                    <!--== LOGO A LA IZQUIERDA== -->
+                    <div class="header__logo">
+                        <a href="#inicio">
+                            <img src="imagenes/logo.png" alt="logo curiokits" />
+                        </a>
+                        <h3>EVENTOS INFANTILES</h3>
+                    </div>
+                    <!-- ==MENÚ MOVIL==-->
+                    <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
                     <label for="menu-toggle" class="header__menu-buton">
                         <span></span>
                         <span></span>
                         <span></span>
                     </label>
-                        <!-- ==NAVEGACIÓN A LA DERECHA== -->
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
-                        </li>
-                        <li class="nav__item">
-                        <a href="paquetes.html" class="nav__link ">Paquetes</a>
-                        </li> 
-                        <li class="nav__item">
-                             <a href="servicios.html" class="nav__link ">Servicios</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="otros.html" class="nav__link ">Otros</a>
-                        </li>
-                        <li class="nav__item">
-                             <a href="galeria.html" class="nav__link ">Galeria</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="contacto.html" class="nav__link ">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>   
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__social">
-                    <a href="https://www.linkedin.com/in/giovanni-emilio-ramirez-28b5161b8/" class="social-link"
-                        aria-label="LinkedIn" target="_blank">💼</a>
-                    <a href="https://github.com/GERB-DEVELOPER" class="social-link" aria-label="GitHub"
-                        target="_blank">💻</a>
-                    <a href="https://www.facebook.com/giovanni.ramirezberrocal" class="social-link" aria-label="Twitter"
-                        target="_blank">🐦</a>
-                    <a href="https://www.instagram.com/ramirezberrocalgiovanni/" class="social-link"
-                        aria-label="Instagram" target="_blank">📷</a>
+                    <!-- ==NAVEGACIÓN A LA DERECHA== -->
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="paquetes.html" class="nav__link ">Paquetes</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="servicios.html" class="nav__link ">Servicios</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="otros.html" class="nav__link ">Otros</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="galeria.html" class="nav__link ">Galeria</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="contacto.html" class="nav__link ">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+            </header>
+            <!-- PAQUETES -->
+        <main class="main">
+            <!-- SECCIÓN PROYECTOS -->
+            <section id="proyectos" class="projects">
+                    <div class="projects__container">
+                        <div class="projects__header">
+                            <h2 class="projects__title">Mis Proyectos</h2>
+                            <p class="projects__subtitle">
+                                Una selección de mis trabajos más destacados
+                            </p>
+                        </div>
+
+                        <div class="projects__grid">
+                <!-- PROYECTO 1 -->
+                    <article class="project-card">
+                                <div class="project-card__inner">
+                                    <!-- FRENTE DE LA TARJETA -->
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/navidad1.jpg" alt="Juego solitario" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Juego solitario</h3>
+                                            <p class="project-card__description">
+                                                Juego clásico de Solitario desarrollado con JavaScript
+                                                vanilla. Interfaz intuitiva, animaciones suaves y lógica
+                                                de juego completa.
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- REVERSO DE LA TARJETA -->
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">Características</h3>
+                                        <p class="project-card__back-text">
+                                            • Autenticación de usuarios<br />
+                                            • Carrito de compras persistente<br />
+                                            • Integración con Stripe<br />
+                                            • Panel de administración<br />
+                                            • Responsive design<br />
+                                            • SEO optimizado
+                                        </p>
+
+                                    </div>
+                                </div>
+                    </article>
+                <!-- PROYECTO 2 -->
+                    <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/plimplim2.jpg" alt="App de Gestion" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">App de Gestión</h3>
+                                            <p class="project-card__description">
+                                                Aplicación web para gestión de proyectos con sistema de
+                                                tareas, calendario y colaboración en tiempo real.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">Características</h3>
+                                        <p class="project-card__back-text">
+                                            • Gestión de proyectos<br />
+                                            • Sistema de tareas<br />
+                                            • Chat en tiempo real<br />
+                                            • Calendario integrado<br />
+                                            • Notificaciones push<br />
+                                            • Dashboard analítico
+                                        </p>
+                                        <div class="project-card__back-buttons">
+                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
+                                            <a href="#" class="project-card__back-button">💻 Código</a>
+                                        </div>
+                                    </div>
+                                </div>
+                    </article>
+                <!-- PROYECTO 3 -->
+                    <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Portfolio Creativo</h3>
+                                            <p class="project-card__description">
+                                                Sitio web portfolio para artista visual con galería
+                                                interactiva y efectos visuales avanzados.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">Características</h3>
+                                        <p class="project-card__back-text">
+                                            • Galería interactiva<br />
+                                            • Animaciones GSAP<br />
+                                            • Lazy loading<br />
+                                            • Lightbox personalizado<br />
+                                            • Optimización de imágenes<br />
+                                            • Performance 98/100
+                                        </p>
+                                        <div class="project-card__back-buttons">
+                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
+                                            <a href="#" class="project-card__back-button">💻 Código</a>
+                                        </div>
+                                    </div>
+                                </div>
+                    </article>
+                <!-- PROYECTO 4 -->
+                    <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Portfolio Creativo</h3>
+                                            <p class="project-card__description">
+                                                Sitio web portfolio para artista visual con galería
+                                                interactiva y efectos visuales avanzados.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">Características</h3>
+                                        <p class="project-card__back-text">
+                                            • Galería interactiva<br />
+                                            • Animaciones GSAP<br />
+                                            • Lazy loading<br />
+                                            • Lightbox personalizado<br />
+                                            • Optimización de imágenes<br />
+                                            • Performance 98/100
+                                        </p>
+                                        <div class="project-card__back-buttons">
+                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
+                                            <a href="#" class="project-card__back-button">💻 Código</a>
+                                        </div>
+                                    </div>
+                                </div>
+                    </article>
+                <!-- PROYECTO 5-->
+                    <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Portfolio Creativo</h3>
+                                            <p class="project-card__description">
+                                                Sitio web portfolio para artista visual con galería
+                                                interactiva y efectos visuales avanzados.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">Características</h3>
+                                        <p class="project-card__back-text">
+                                            • Galería interactiva<br />
+                                            • Animaciones GSAP<br />
+                                            • Lazy loading<br />
+                                            • Lightbox personalizado<br />
+                                            • Optimización de imágenes<br />
+                                            • Performance 98/100
+                                        </p>
+                                        <div class="project-card__back-buttons">
+                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
+                                            <a href="#" class="project-card__back-button">💻 Código</a>
+                                        </div>
+                                    </div>
+                                </div>
+                    </article>
+                <!-- PROYECTO 6 -->
+                    <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Portfolio Creativo</h3>
+                                            <p class="project-card__description">
+                                                Sitio web portfolio para artista visual con galería
+                                                interactiva y efectos visuales avanzados.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">Características</h3>
+                                        <p class="project-card__back-text">
+                                            • Galería interactiva<br />
+                                            • Animaciones GSAP<br />
+                                            • Lazy loading<br />
+                                            • Lightbox personalizado<br />
+                                            • Optimización de imágenes<br />
+                                            • Performance 98/100
+                                        </p>
+                                        <div class="project-card__back-buttons">
+                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
+                                            <a href="#" class="project-card__back-button">💻 Código</a>
+                                        </div>
+                                    </div>
+                                </div>
+                    </article>
+                <!-- PROYECTO 7 -->
+                    <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Portfolio Creativo</h3>
+                                            <p class="project-card__description">
+                                                Sitio web portfolio para artista visual con galería
+                                                interactiva y efectos visuales avanzados.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">Características</h3>
+                                        <p class="project-card__back-text">
+                                            • Galería interactiva<br />
+                                            • Animaciones GSAP<br />
+                                            • Lazy loading<br />
+                                            • Lightbox personalizado<br />
+                                            • Optimización de imágenes<br />
+                                            • Performance 98/100
+                                        </p>
+                                        <div class="project-card__back-buttons">
+                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
+                                            <a href="#" class="project-card__back-button">💻 Código</a>
+                                        </div>
+                                    </div>
+                                </div>
+                    </article>
+                <!-- PROYECTO 8 -->
+                    <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Portfolio Creativo</h3>
+                                            <p class="project-card__description">
+                                                Sitio web portfolio para artista visual con galería
+                                                interactiva y efectos visuales avanzados.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">Características</h3>
+                                        <p class="project-card__back-text">
+                                            • Galería interactiva<br />
+                                            • Animaciones GSAP<br />
+                                            • Lazy loading<br />
+                                            • Lightbox personalizado<br />
+                                            • Optimización de imágenes<br />
+                                            • Performance 98/100
+                                        </p>
+                                        <div class="project-card__back-buttons">
+                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
+                                            <a href="#" class="project-card__back-button">💻 Código</a>
+                                        </div>
+                                    </div>
+                                </div>
+                    </article>
+                <!-- PROYECTO 9 -->
+                    <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Portfolio Creativo</h3>
+                                            <p class="project-card__description">
+                                                Sitio web portfolio para artista visual con galería
+                                                interactiva y efectos visuales avanzados.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">Características</h3>
+                                        <p class="project-card__back-text">
+                                            • Galería interactiva<br />
+                                            • Animaciones GSAP<br />
+                                            • Lazy loading<br />
+                                            • Lightbox personalizado<br />
+                                            • Optimización de imágenes<br />
+                                            • Performance 98/100
+                                        </p>
+                                        <div class="project-card__back-buttons">
+                                            <a href="#" class="project-card__back-button">👁️ Ver</a>
+                                            <a href="#" class="project-card__back-button">💻 Código</a>
+                                        </div>
+                                    </div>
+                                </div>
+                    </article>
                 </div>
-                <p class="footer__text">
-                    © 2025 curiokits Producciones. Todos los derechos reservados.
-                    Desarrollado por Janeth y Betsy con mucho love❤️
-                </p>
             </div>
-        </footer>
-</body>
+            </section>
+        </main>
+    </body>
+
 </html>

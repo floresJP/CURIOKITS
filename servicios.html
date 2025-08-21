@@ -1,78 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos/servicios.css">
 </head>
-<body>
+
     <body>
         <!-- ====ESTRUCTURA PRINCIPAL CON CSS-GRID PARA MOVILO=== -->
-    <div class="portafolio">
-   <!-- +************************************
+        <div class="portafolio">
+            <!-- +************************************
             HEADER CON NAVEGACIÓN REPONSIVE  
          *************************************-->
-        <header class="header">
-            <div class="header_container">
-                <!--== LOGO A LA IZQUIERDA== -->
-                <div class="header__logo">
-                    <a href="#inicio">
-                        <img src="imagenes/logo.png" alt="logo curiokits" />
-                    </a>
-                    <h3>EVENTOS INFANTILES</h3>
-                </div>
-                    <!-- ==MENÚ MOVIL==--> 
-                    <input type="checkbox" id="menu-toggle" class="header__menu-toggle" /> 
+            <header class="header">
+                <div class="header_container">
+                    <!--== LOGO A LA IZQUIERDA== -->
+                    <div class="header__logo">
+                        <a href="#inicio">
+                            <img src="imagenes/logo.png" alt="logo curiokits" />
+                        </a>
+                        <h3>EVENTOS INFANTILES</h3>
+                    </div>
+                    <!-- ==MENÚ MOVIL==-->
+                    <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
                     <label for="menu-toggle" class="header__menu-buton">
                         <span></span>
                         <span></span>
                         <span></span>
                     </label>
-                        <!-- ==NAVEGACIÓN A LA DERECHA== -->
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
-                        </li>
-                        <li class="nav__item">
-                        <a href="paquetes.html" class="nav__link ">Paquetes</a>
-                        </li> 
-                        <li class="nav__item">
-                             <a href="servicios.html" class="nav__link ">Servicios</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="otros.html" class="nav__link ">Otros</a>
-                        </li>
-                        <li class="nav__item">
-                             <a href="galeria.html" class="nav__link ">Galeria</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="contacto.html" class="nav__link ">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>   
-        <main>
+                    <!-- ==NAVEGACIÓN A LA DERECHA== -->
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="paquetes.html" class="nav__link ">Paquetes</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="servicios.html" class="nav__link ">Servicios</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="otros.html" class="nav__link ">Otros</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="galeria.html" class="nav__link ">Galeria</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="contacto.html" class="nav__link ">Contacto</a>
+                            </li>
+                        </ul>
+                    </nav>
 
-        </main>
-        <footer class="footer">
-            <div class="footer__container">
-                <div class="footer__social">
-                    <a href="https://www.linkedin.com/in/giovanni-emilio-ramirez-28b5161b8/" class="social-link"
-                        aria-label="LinkedIn" target="_blank">💼</a>
-                    <a href="https://github.com/GERB-DEVELOPER" class="social-link" aria-label="GitHub"
-                        target="_blank">💻</a>
-                    <a href="https://www.facebook.com/giovanni.ramirezberrocal" class="social-link" aria-label="Twitter"
-                        target="_blank">🐦</a>
-                    <a href="https://www.instagram.com/ramirezberrocalgiovanni/" class="social-link"
-                        aria-label="Instagram" target="_blank">📷</a>
-                </div>
-                <p class="footer__text">
-                    © 2025 curiokits Producciones. Todos los derechos reservados.
-                    Desarrollado por Janeth y Betsy con mucho love❤️
-                </p>
-            </div>
-        </footer>
-</body>
+            </header>
+            <!-- PAQUETES -->
+            <main class="main">
+                <!-- SECCIÓN PROYECTOS -->
+                <section id="proyectos" class="projects">
+                    <div class="projects__container">
+                        <div class="projects__header">
+                            <h2 class="projects__title">Servicios </h2>
+                            <p class="projects__subtitle">
+                                🌟🤹‍♀️ Hacemos realidad la fiesta soñada de tus peques 🎊
+                            </p>
+                        </div>
+
+                        <div class="projects__grid">
+                            <!-- PROYECTO 1 -->
+                            <article class="project-card">
+                                <div class="project-card__inner">
+                                    <!-- FRENTE DE LA TARJETA -->
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/show1.jpg" alt="Juego solitario" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Show temático Intensamente</h3>
+                                            <p class="project-card__description">
+                                              Los personajes favoritos de la película llegan para llenar tu fiesta de energía y diversión.
+                                                Con juegos interactivos, bailes y dinámicas, cada emoción hará que los pequeños vivan una experiencia inolvidable.
+
+                                        </div>
+                                    </div>
+
+                                    <!-- REVERSO DE LA TARJETA -->
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title"> 😡INTENSAMENTE😀</h3>
+                                        <p class="project-card__back-text">
+                                            • Personajes principales en vivo <br>
+                                            😀 Alegría
+                                                😡 Ira <br>
+                                                😢 Tristeza.etc
+                                                
+                                               <br />
+                                            • Show interactivo con juegos y dinámicas emocionales<br />
+                                            • Disfraces profesionalese<br />
+                                            • Música y coreografías temáticas<br />
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- PROYECTO 2 -->
+                            <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/plimplim2525.jpg" alt="App de Gestion" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Show de PlimPlim</h3>
+                                            <p class="project-card__description">
+                                                El payasito más tierno llega para llenar tu fiesta de sonrisas, canciones y momentos inolvidables. Con su alegría contagiosa enseña a los pequeños el valor de compartir y ayudar a los demás. 🎶💖.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title"> 🤡PLIMPLIM🤡</h3>
+                                        <p class="project-card__back-text">
+                                            • Coreografías con canciones del programa<br />
+                                            • Interacción con los niños durante todo el espectáculo<br />
+                                            • Animación de cumpleaños con temática personalizada<br />
+                                            • Juegos con acsesorios<br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- PROYECTO 3 -->
+                            <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/patrulla canina.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Paw patrol</h3>
+                                            <p class="project-card__description">
+                                               🐶 
+                                             Chase, Marshall y Skye, los perritos más famosos del mundo, llegan a tu fiesta con mucha energía, canciones y dinámicas. 🐾✨ ¡Una experiencia única que hará que cada niño se sienta parte de la aventura y viva la magia de la Patrulla Canina! 🚒🚁🎉 
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title"> 🐶PATRULLA CANINA🎉 </h3>
+                                        <p class="project-card__back-text">
+                                            • Participación en vivo de los cachorros: Chase, Marshall, Skye, Rubble y más<br />
+                                            • Show de aventuras con una misión divertida<br />
+                                            •Coreografías con canciones oficiales<br />
+                                            • Dinámicas para cumpleaños con participación activa
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- PROYECTO 4 -->
+                            <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/frozen.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">👑Show infantil de Frozen❄️</h3>
+                                            <p class="project-card__description">
+                                                Elsa, Anna y Olaf llegan con su magia para llenar tu celebración de alegría, música y diversión. Un espectáculo lleno de encanto donde los niños cantan, bailan y se sumergen en el mundo de Arendelle. ❄️✨.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">❄️✨MUNDO DE ARENDELLE✨</h3>
+                                        <p class="project-card__back-text">
+                                            Show en vivo con Elsa, Anna y Olaf<br />
+                                            • Coreografías con las canciones más famosas: ¡Libre Soy!<br />
+                                            • Escenografía mágica con efectos de “nieve”<br />
+                                            • Juegos interactivos con los niños<br />
+                                            • Vestuario de alta calidad y ambiente temático<br />
+                                            • Ideal para cumpleaños de princesas y fiestas temáticas
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- PROYECTO 5-->
+                            <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/babyshower.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Baby shower</h3>
+                                            <p class="project-card__description">
+                                                Un momento especial para celebrar la llegada del bebé con una decoración mágica, juegos divertidos y detalles llenos de amor. 🌸✨ ¡Creamos un ambiente único para que tu celebración sea inolvidable!.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">👶Características👶</h3>
+                                        <p class="project-card__back-text">
+                                            • Juegos divertidos para adultos y familia<br />
+                                            • Dinámicas clásicas: cambia pañales, etc.<br />
+                                            • Decoración personalizada según el estilo del evento<br />
+                                            • Música suave y ambiente emotivo<br />
+                                        </p>
+                                
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- PROYECTO 6 -->
+                            <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/showheroe.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Show de superhéroes</h3>
+                                            <p class="project-card__description">
+                                               💥¡Los héroes más valientes llegan a tu fiesta con acción, música y diversión! Una experiencia llena de energía, donde los niños se convierten en parte de la aventura junto a sus personajes favoritos. ⚡🎉.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">💥CAPITÁN AMÉRICA🚀</h3>
+                                        <p class="project-card__back-text">
+                                            • Participación de superhéroes como Capitán América, Iron Man, Spider-Man y más<br />
+                                            • Coreografías, juegos y misiones para los niños<br />
+                                            • Escenografía temática de acción y valentía<br />
+                                            • Ideal para fiestas llenas de energía y aventuras
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- PROYECTO 7 -->
+                            <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/navidad-2525.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">SHOW NAVIDEÑO</h3>
+                                            <p class="project-card__description">
+                                               🎄Papá Noel, duendecitos y personajes mágicos llegan para llenar tu evento de alegría, villancicos y mucha diversión. ❄️✨ Un espectáculo lleno de ilusión que hará brillar los corazones de grandes y pequeños.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">🎄NAVIDAD🎄</h3>
+                                        <p class="project-card__back-text">
+                                            • Aparición especial de Santa Claus, duendes y/o Mamá Noel<br />
+                                            • Show musical con villancicos y coreografías navideñas<br />
+                                            • Juegos interactivos y entrega de regalitos<br />
+                                            • Actividades para niños y familias<br />
+                                            • Optimización de imágenes<br />
+                                            • Ideal para colegios, empresas y fiestas familiares
+                                        </p>
+                                     
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- PROYECTO 8 -->
+                            <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/showbebetiburon.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">show de Baby Shark</h3>
+                                            <p class="project-card__description">
+                                               🦈El tiburoncito más famoso llega a tu fiesta con música, bailes y mucha diversión. 🌊💙 Un espectáculo lleno de ritmo que hará cantar y bailar a todos los niños.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">🌊BEBÉ TIBURON🦈🌊</h3>
+                                        <p class="project-card__back-text">
+                                            • Show en vivo con Baby Shark y su familia (mamá, papá y abuelito shark)<br />
+                                            •Coreografías con la famosa canción “Baby Shark doo doo doo...”<br />
+                                            • Juegos y dinámicas con burbujas, baile y colores<br />
+                                            • Interacción con los niños durante el show.
+                                        </p>
+                                        
+                                    </div>
+                                </div>
+                            </article>
+                            <!-- PROYECTO 9 -->
+                            <article class="project-card">
+                                <div class="project-card__inner">
+                                    <div class="project-card__front">
+                                        <div class="project-card__image">
+                                            <img src="imagenes/showmariobros.jpg" alt="Portafolio Creativo" />
+                                        </div>
+                                        <div class="project-card__content">
+                                            <h3 class="project-card__title">Mario Bros</h3>
+                                            <p class="project-card__description">
+                                               🍄 ¡Mario y Luigi llegan saltando de los videojuegos a tu fiesta! 🎉 Con juegos, música, bailes y mucha diversión, los niños vivirán una aventura llena de energía y magia. ⭐✨
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-card__back">
+                                        <h3 class="project-card__back-title">🎮🎉MARIO BROS🎉</h3>
+                                        <p class="project-card__back-text">
+                                            • Participación en vivo de Mario, Luigi y la Princesa Peach<br />
+                                            •Show temático con juegos de aventuras y obstáculos<br />
+                                            • Coreografías con música clásica del videojuego<br />
+                                            • Interacción con los niños tipo “misiones” y premios<br />
+                                            • Ideal para fiestas gamers y niños fans de videojuegos
+                                        </p>
+                                       
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+    </body>
+
 </html>
